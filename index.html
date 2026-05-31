@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidad · Color Dash</title>
+<style>
+  :root{
+    --bg:#0c0c1a; --panel:#14142a; --ink:#eef0ff; --muted:#9aa0c8;
+    --c0:#08d9d6; --c1:#a06bff; --c2:#ff2e63; --c3:#ffd000;
+    --line:rgba(255,255,255,.08);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    font-family:'Segoe UI',system-ui,-apple-system,sans-serif;
+    background:
+      radial-gradient(900px 500px at 80% -10%, rgba(160,107,255,.18), transparent 60%),
+      radial-gradient(700px 400px at 0% 10%, rgba(8,217,214,.14), transparent 55%),
+      var(--bg);
+    color:var(--ink); line-height:1.7; min-height:100vh; padding:0 0 80px;
+  }
+  .wrap{max-width:820px; margin:0 auto; padding:0 24px;}
+
+  header{padding:60px 0 28px; border-bottom:1px solid var(--line); margin-bottom:40px;}
+  .badge{display:flex; align-items:center; gap:14px; margin-bottom:22px;}
+  .ring{width:54px; height:54px; flex:none; position:relative;}
+  .logo-txt{font-weight:800; font-size:20px; letter-spacing:.5px;
+    background:linear-gradient(90deg,var(--c0),var(--c1),var(--c2),var(--c3));
+    -webkit-background-clip:text; background-clip:text; color:transparent;}
+  h1{font-size:clamp(28px,6vw,42px); line-height:1.15; margin-bottom:10px; font-weight:800;}
+  .updated{color:var(--muted); font-size:14px;}
+
+  .langs{display:flex; gap:8px; margin-top:24px;}
+  .lang{background:rgba(255,255,255,.05); border:1px solid var(--line); color:var(--ink);
+    padding:8px 18px; border-radius:10px; cursor:pointer; font-size:14px; font-weight:600;
+    transition:all .2s;}
+  .lang.active{background:var(--c1); border-color:transparent; color:#0c0c1a;}
+
+  h2{font-size:22px; margin:38px 0 12px; font-weight:700; color:#fff;}
+  h2 .num{color:var(--c1); margin-right:8px;}
+  p{margin-bottom:14px; color:#d6d9f5;}
+  ul{margin:0 0 14px 22px; color:#d6d9f5;}
+  li{margin-bottom:8px;}
+  a{color:var(--c0);}
+  strong{color:#fff;}
+
+  .box{background:var(--panel); border:1px solid var(--line); border-radius:16px;
+    padding:22px 24px; margin:18px 0;}
+  .contact{margin-top:14px; padding:10px 14px; background:rgba(8,217,214,.08);
+    border-radius:10px; display:inline-block;}
+
+  footer{margin-top:50px; padding-top:24px; border-top:1px solid var(--line);
+    color:var(--muted); font-size:13px; text-align:center;}
+
+  [data-lang]{display:none;}
+  [data-lang].show{display:block;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="badge">
+      <svg class="ring" viewBox="0 0 54 54">
+        <g transform="translate(27,27)" fill="none" stroke-width="7" stroke-linecap="round">
+          <path d="M 0 -20 A 20 20 0 0 1 20 0" stroke="#ff2e63"/>
+          <path d="M 20 0 A 20 20 0 0 1 0 20" stroke="#08d9d6"/>
+          <path d="M 0 20 A 20 20 0 0 1 -20 0" stroke="#ffd000"/>
+          <path d="M -20 0 A 20 20 0 0 1 0 -20" stroke="#a06bff"/>
+        </g>
+        <circle cx="27" cy="27" r="9" fill="#6ffff6"/>
+      </svg>
+      <span class="logo-txt">COLOR DASH</span>
+    </div>
+
+    <h1 data-lang="es" class="show">Política de Privacidad</h1>
+    <h1 data-lang="en">Privacy Policy</h1>
+    <div class="updated" data-lang="es" class="show">Última actualización: 28 de mayo de 2026</div>
+    <div class="updated" data-lang="en">Last updated: May 28, 2026</div>
+
+    <div class="langs">
+      <button class="lang active" onclick="setLang('es')">Español</button>
+      <button class="lang" onclick="setLang('en')">English</button>
+    </div>
+  </header>
+
+  <!-- ============ ESPAÑOL ============ -->
+  <div data-lang="es" class="show">
+    <p>Esta Política de Privacidad describe cómo <strong>Color Dash</strong> ("la aplicación", "nosotros") trata la información cuando usas nuestro juego. Respetamos tu privacidad y queremos ser transparentes sobre qué datos se manejan y por qué.</p>
+
+    <h2><span class="num">1.</span>Información que se recopila</h2>
+    <p>Color Dash está diseñado para recopilar la menor cantidad de datos posible. La información se maneja de las siguientes formas:</p>
+    <ul>
+      <li><strong>Datos guardados en tu dispositivo:</strong> tu progreso de juego (puntuaciones, estrellas, skins desbloqueadas, ajustes) se guarda localmente en tu dispositivo. No se envía a nuestros servidores.</li>
+      <li><strong>Google Play Games Services:</strong> si inicias sesión voluntariamente, se usa tu cuenta de Google Play Games para mostrar tu nombre de jugador, guardar tu progreso en la nube y mostrar clasificaciones (rankings). Estos datos los gestiona Google.</li>
+      <li><strong>Publicidad (Google AdMob):</strong> mostramos anuncios a través de Google AdMob, que puede recopilar identificadores del dispositivo y datos de uso para mostrar anuncios. Consulta la sección 3.</li>
+      <li><strong>Compras dentro de la app:</strong> las compras se procesan a través de Google Play. No recibimos ni almacenamos los datos de tu tarjeta; los gestiona Google.</li>
+    </ul>
+
+    <h2><span class="num">2.</span>Cómo se usa la información</h2>
+    <p>La información se utiliza únicamente para:</p>
+    <ul>
+      <li>Guardar y restaurar tu progreso de juego.</li>
+      <li>Mostrar clasificaciones y funciones sociales de Google Play Games (si inicias sesión).</li>
+      <li>Mostrar anuncios que ayudan a mantener la aplicación gratuita.</li>
+      <li>Procesar compras opcionales dentro de la app.</li>
+    </ul>
+
+    <h2><span class="num">3.</span>Publicidad y servicios de terceros</h2>
+    <p>Color Dash utiliza servicios de terceros que pueden recopilar información para su funcionamiento:</p>
+    <ul>
+      <li><strong>Google AdMob</strong> — para mostrar anuncios. AdMob puede usar identificadores de publicidad para ofrecer anuncios más relevantes. Puedes obtener más información en la política de privacidad de Google.</li>
+      <li><strong>Google Play Games Services</strong> — para inicio de sesión, guardado en la nube y clasificaciones.</li>
+      <li><strong>Google Play Billing</strong> — para procesar compras dentro de la aplicación.</li>
+    </ul>
+    <p>Estos servicios tienen sus propias políticas de privacidad. Te recomendamos revisarlas:</p>
+    <ul>
+      <li>Política de privacidad de Google: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
+    </ul>
+
+    <h2><span class="num">4.</span>Datos de menores</h2>
+    <p>Color Dash no está dirigido específicamente a menores de 13 años y no recopilamos de forma consciente información personal de menores. Si crees que un menor nos ha proporcionado datos, contáctanos y los eliminaremos.</p>
+
+    <h2><span class="num">5.</span>Permisos</h2>
+    <p>La aplicación puede solicitar acceso a internet para mostrar anuncios, sincronizar clasificaciones y guardar tu progreso en la nube. El juego se puede jugar sin conexión; en ese caso, tu progreso se guarda solo en tu dispositivo.</p>
+
+    <h2><span class="num">6.</span>Seguridad</h2>
+    <p>Tomamos medidas razonables para proteger la información. Sin embargo, ningún método de transmisión o almacenamiento es 100% seguro, por lo que no podemos garantizar seguridad absoluta.</p>
+
+    <h2><span class="num">7.</span>Tus derechos</h2>
+    <p>Puedes borrar los datos guardados localmente desinstalando la aplicación. Para los datos asociados a Google Play Games, puedes gestionarlos desde tu cuenta de Google.</p>
+
+    <h2><span class="num">8.</span>Cambios en esta política</h2>
+    <p>Podemos actualizar esta Política de Privacidad ocasionalmente. Publicaremos cualquier cambio en esta misma página con su fecha de actualización.</p>
+
+    <h2><span class="num">9.</span>Contacto</h2>
+    <p>Si tienes preguntas sobre esta Política de Privacidad, puedes contactarnos en:</p>
+    <div class="box">
+      <span class="contact">📧 <strong>entertainmentcronos@gmail.com
+</strong></span>
+    </div>
+  </div>
+
+  <!-- ============ ENGLISH ============ -->
+  <div data-lang="en">
+    <p>This Privacy Policy describes how <strong>Color Dash</strong> ("the app", "we") handles information when you use our game. We respect your privacy and want to be transparent about what data is handled and why.</p>
+
+    <h2><span class="num">1.</span>Information We Collect</h2>
+    <p>Color Dash is designed to collect as little data as possible. Information is handled as follows:</p>
+    <ul>
+      <li><strong>Data stored on your device:</strong> your game progress (scores, stars, unlocked skins, settings) is stored locally on your device. It is not sent to our servers.</li>
+      <li><strong>Google Play Games Services:</strong> if you voluntarily sign in, your Google Play Games account is used to display your player name, save your progress to the cloud, and show leaderboards. This data is managed by Google.</li>
+      <li><strong>Advertising (Google AdMob):</strong> we show ads through Google AdMob, which may collect device identifiers and usage data to display ads. See section 3.</li>
+      <li><strong>In-app purchases:</strong> purchases are processed through Google Play. We do not receive or store your card details; they are handled by Google.</li>
+    </ul>
+
+    <h2><span class="num">2.</span>How Information Is Used</h2>
+    <p>Information is used solely to:</p>
+    <ul>
+      <li>Save and restore your game progress.</li>
+      <li>Display leaderboards and Google Play Games social features (if you sign in).</li>
+      <li>Show ads that help keep the app free.</li>
+      <li>Process optional in-app purchases.</li>
+    </ul>
+
+    <h2><span class="num">3.</span>Advertising and Third-Party Services</h2>
+    <p>Color Dash uses third-party services that may collect information to operate:</p>
+    <ul>
+      <li><strong>Google AdMob</strong> — to display ads. AdMob may use advertising identifiers to deliver more relevant ads.</li>
+      <li><strong>Google Play Games Services</strong> — for sign-in, cloud saves, and leaderboards.</li>
+      <li><strong>Google Play Billing</strong> — to process in-app purchases.</li>
+    </ul>
+    <p>These services have their own privacy policies. We recommend reviewing them:</p>
+    <ul>
+      <li>Google Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
+    </ul>
+
+    <h2><span class="num">4.</span>Children's Data</h2>
+    <p>Color Dash is not specifically directed at children under 13, and we do not knowingly collect personal information from children. If you believe a child has provided us with data, please contact us and we will delete it.</p>
+
+    <h2><span class="num">5.</span>Permissions</h2>
+    <p>The app may request internet access to show ads, sync leaderboards, and save your progress to the cloud. The game can be played offline; in that case, your progress is stored only on your device.</p>
+
+    <h2><span class="num">6.</span>Security</h2>
+    <p>We take reasonable measures to protect information. However, no method of transmission or storage is 100% secure, so we cannot guarantee absolute security.</p>
+
+    <h2><span class="num">7.</span>Your Rights</h2>
+    <p>You can delete locally stored data by uninstalling the app. For data associated with Google Play Games, you can manage it through your Google account.</p>
+
+    <h2><span class="num">8.</span>Changes to This Policy</h2>
+    <p>We may update this Privacy Policy occasionally. Any changes will be posted on this page with an updated date.</p>
+
+    <h2><span class="num">9.</span>Contact</h2>
+    <p>If you have questions about this Privacy Policy, you can contact us at:</p>
+    <div class="box">
+      <span class="contact">📧 <strong>entertainmentcronos@gmail.com
+</strong></span>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Color Dash. <span data-lang="es" class="show">Todos los derechos reservados.</span><span data-lang="en">All rights reserved.</span></p>
+  </footer>
+</div>
+
+<script>
+  function setLang(lang){
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-lang]').forEach(el=>{
+      el.classList.toggle('show', el.getAttribute('data-lang')===lang);
+    });
+    document.querySelectorAll('.lang').forEach(b=>b.classList.remove('active'));
+    event.target.classList.add('active');
+  }
+</script>
+</body>
+</html>
